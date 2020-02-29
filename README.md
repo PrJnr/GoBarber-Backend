@@ -27,5 +27,6 @@ Executando o Projeto:
 * Redis
 * Yup
 * Youch
+* Docker
 
 
