@@ -12,8 +12,7 @@ Executando o Projeto:
 
 ## Ferramentas Utilizadas
 
-* NodeJS
-* ExpressJS
+* NodeJS * ExpressJS
 * Nodemon
 * ESLint
 * Prettier
