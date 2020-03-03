@@ -130,7 +130,7 @@ class AppointmentController {
             include: [
                 {
                     model: User,
-                    as: ' provider',
+                    as: 'provider',
                     attributes: ['name', 'email'],
                 },
             ],
