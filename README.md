@@ -28,6 +28,8 @@ Executando o Projeto:
 * Yup
 * Youch
 * Docker
+* Redis
+* Bee-Queue
 
 ## Instalação do Docker e Clone do Repositório no DockerHub
 
