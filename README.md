@@ -24,12 +24,12 @@ Executando o Projeto:
 * Sequelize
 * Postgres
 * MongoDB
-* Redis
 * Yup
 * Youch
 * Docker
 * Redis
 * Bee-Queue
+* Sentry
 
 ## Instalação do Docker e Clone do Repositório no DockerHub
 
