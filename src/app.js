@@ -2,9 +2,13 @@
 // Trabalhar com classes
 
 // imoport ***
+
 import express from 'express';
+import 'express-async-errors';
 import path from 'path';
+import * as Sentry from '@sentry/node';
 import routes from './routes';
+import sentryConfig from './config/sentry';
 
 import './database';
 
@@ -13,11 +17,14 @@ class App {
         // metodo constructor é chamado toda vez que a classe for instanciada
         this.server = express();
 
+        Sentry.init(sentryConfig);
+
         this.middlewares();
         this.routes();
     }
 
     middlewares() {
+        this.server.use(Sentry.Handlers.requestHandler());
         this.server.use(express.json());
         this.server.use(
             './files',
@@ -27,6 +34,7 @@ class App {
 
     routes() {
         this.server.use(routes); // elas iram funcionar como middlewares - routes esta vindo do import ***
+        this.server.use(Sentry.Handlers.errorHandler());
     }
 }
 
