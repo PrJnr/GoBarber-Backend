@@ -9,6 +9,7 @@ import ProviderController from './app/controllers/ProviderController';
 import AppointmentController from './app/controllers/AppointmentController';
 import ScheduleController from './app/controllers/ScheduleController';
 import NotificationController from './app/controllers/NotificationController';
+import AvailableController from './app/controllers/AvailableController';
 
 import authMiddleware from './app/middleares/auth';
 
@@ -25,6 +26,7 @@ routes.use(authMiddleware); // Nesse caso o authMiddleware so vai valer p/ as ro
 routes.put('/users', UserController.update);
 
 routes.get('/providers', ProviderController.index);
+routes.get('/providers/providerId/availablre', AvailableController.index);
 
 routes.get('/appointments', AppointmentController.index);
 routes.get('/schedules', ScheduleController.index);
