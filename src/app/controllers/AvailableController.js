@@ -1,5 +1,5 @@
 import { Op } from 'sequelize';
-import { startOfDay, endOfDay } from ' date-fns';
+import { startOfDay, endOfDay } from 'date-fns';
 import Appointment from '../models/Appointment';
 
 class AvailableController {
