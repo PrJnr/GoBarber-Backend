@@ -26,7 +26,7 @@ routes.use(authMiddleware); // Nesse caso o authMiddleware so vai valer p/ as ro
 routes.put('/users', UserController.update);
 
 routes.get('/providers', ProviderController.index);
-routes.get('/providers/providerId/availablre', AvailableController.index);
+routes.get('/providers/:providerId/available', AvailableController.index);
 
 routes.get('/appointments', AppointmentController.index);
 routes.get('/schedules', ScheduleController.index);
