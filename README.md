@@ -1,4 +1,11 @@
-# GoBarber-Backend
+<h1 align="center">
+    <img alt="Go Barber Frontend" src="img/logo.svg" width="200px" />
+</h1>
+
+<h2 align="center" >
+    Go Barber - Backend
+
+</h2>
 App de Agendamento de serviço para Barbearia desenvolvido utilizando Node.js + Express no Backend;
 
 ### Instalando e Executando
@@ -62,3 +69,10 @@ Mongo:
 `docker start mongobarber`
 
 
+
+
+## 👨🏼‍🚀 Desenvolvido por:
+
+Paulo Ricardo Favaro da Silva Junior
+
+ [@Linkedin](https://www.linkedin.com/in/paulo-ricardo-favaro-da-silva-junior-79092ab8/) | [@Instagram](https://www.instagram.com/prjr_dexter/)
